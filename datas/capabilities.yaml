@@ -1,0 +1,12 @@
+capabilities:
+  platformName: "android"
+  deviceName: "8f5c611"
+#  appPackage: "com.maitian.carserver.test"
+#  appActivity: "io.dcloud.PandoraEntryActivity"
+#  appPackage: "com.zjdiepu.owners"
+#  appActivity: "com.maitian.owners.sample.MainVPTabActivity"
+  appPackage: "com.maitian.owners.test"
+  appActivity: "com.maitian.owners.Launcher"
+  noReset: "true"
+
+url: "http://0.0.0.0:4723/wd/hub"

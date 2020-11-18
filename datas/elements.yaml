@@ -1,0 +1,39 @@
+privacy_title:
+  - id : tv_1
+privacy_agree:
+  - id : tv_okay
+  - click: []
+goto_user:
+  - id: rb_favrate
+  - click: []
+  - id: tv_username
+goto_home:
+  - id : rb_home
+  - click: []
+goto_login:
+  - id: img_user_icon
+  - click: []
+goto_setting:
+  - xpath: "//*[@text='设置']/.."
+  - click: []
+login:
+  - id: et_phone
+  - sendkeys: ${cellphone}
+  - id: et_phone_code
+  - sendkeys: ${code}
+  - id: btn_validate
+  - click: []
+logout:
+  - id: btn_singout
+  - click: []
+  - id: tv_okay
+  - click: []
+close_alert:
+  - id: iv_back
+  - click: []
+goto_addresswork:
+  - xpath: "//*[@text='通讯录']"
+  - click: []
+addmember:
+  - scroll : '添加成员'
+  - click : []
