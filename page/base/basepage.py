@@ -77,7 +77,10 @@ class BasePage():
         with open('../datas/elements.yaml') as f:
             eles = yaml.safe_load(f)
             if po_method in eles.keys():
-                for step in eles[po_method]:
+                item = eles[po_method]
+                info = item['info']
+                print('步骤：' + info)
+                for step in item['step']:
                     # 如果step 是字典
                     if isinstance(step,dict):
                         for key in step.keys():

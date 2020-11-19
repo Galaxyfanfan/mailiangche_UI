@@ -1,39 +1,61 @@
 privacy_title:
-  - id : tv_1
+  info : '隐私政策名字'
+  step :
+    - id : tv_1
 privacy_agree:
-  - id : tv_okay
-  - click: []
+  info: '隐私政策-点击同意'
+  step:
+    - id : tv_okay
+    - click: []
 goto_user:
-  - id: rb_favrate
-  - click: []
-  - id: tv_username
+  info: '前往用户页'
+  step:
+    - id: rb_favrate
+    - click: []
+    - id: tv_username
 goto_home:
-  - id : rb_home
-  - click: []
+  info: '前往首页'
+  step:
+    - id : rb_home
+    - click: []
 goto_login:
-  - id: img_user_icon
-  - click: []
+  info: '前往登录页'
+  step:
+    - id: img_user_icon
+    - click: []
 goto_setting:
-  - xpath: "//*[@text='设置']/.."
-  - click: []
+  info: '前往设置页'
+  step:
+    - xpath: "//*[@text='设置']/.."
+    - click: []
 login:
-  - id: et_phone
-  - sendkeys: ${cellphone}
-  - id: et_phone_code
-  - sendkeys: ${code}
-  - id: btn_validate
-  - click: []
+  info: '输入账号验证码-点击登录'
+  step:
+    - id: et_phone
+    - sendkeys: ${cellphone}
+    - id: et_phone_code
+    - sendkeys: ${code}
+    - id: btn_validate
+    - click: []
 logout:
-  - id: btn_singout
-  - click: []
-  - id: tv_okay
-  - click: []
+  info: '退出登录'
+  step:
+    - id: btn_singout
+    - click: []
+    - id: tv_okay
+    - click: []
 close_alert:
-  - id: iv_back
-  - click: []
+  info: '关闭登录后弹框'
+  step:
+    - id: iv_back
+    - click: []
 goto_addresswork:
-  - xpath: "//*[@text='通讯录']"
-  - click: []
+  info: ''
+  step:
+    - xpath: "//*[@text='通讯录']"
+    - click: []
 addmember:
-  - scroll : '添加成员'
-  - click : []
+  info: ''
+  step:
+    - scroll : '添加成员'
+    - click : []
